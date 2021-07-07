@@ -1,0 +1,273 @@
+ :root{
+        --Red: hsl(0, 100%, 74%);
+        --Green: hsl(154, 59%, 51%);
+        --Blue: hsl(248, 32%, 49%);
+        --Dark-Blue: hsl(249, 10%, 26%); 
+        --Grayish-Blue: hsl(246, 25%, 77%);
+    }
+    *{
+        padding:0;
+        margin:0;
+    }
+    @font-face {
+        font-family:myFirstFont;
+        src: url(https://fonts.google.com/specimen/Poppins);
+    }
+.main-body{
+    height:100%;
+    width:100%;
+    z-index: 1;
+    opacity:0.9;
+    background: url(/images/bg-intro-desktop.png) var(--Red);
+   
+    position:absolute;
+    color:white;
+    font-family: myFirstFont;
+    }
+@media screen and (max-width:600px){
+   
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        top:3em;
+        position:absolute;
+        left:10px;
+        margin:auto;
+        overflow: visible;
+        
+    }
+
+    .intro-comp{
+        width:80vw;
+        margin: 1em 2em ;
+        font-size:1rem;
+        padding-left: 1em;
+    
+    }
+    
+
+    
+    .head{
+        margin:auto;
+        font-size:1.6rem;
+        font-weight:900;
+        width:60vw;
+        text-align: center;
+        padding-left:2.5em;
+       
+    }
+    .body{
+        font-size: 1rem;
+        font-weight: 400;
+        margin:10px 30px 0px 30px;
+        width:60vw;
+        color:white;
+        text-align: center;
+        line-height: 1.5em;
+        padding-left: 2em;
+    }
+   
+    .info{
+        height:30px;
+        text-align: center;
+        width:60vw;
+        background-color: var(--Blue);
+        padding:1.5em;
+        border-radius: 5px;
+        margin:auto;
+    }
+    .head1{
+        font-weight: 600;
+    }
+    
+    .form-control{
+        margin:0.1em 4em;
+        background-color: white;
+        height:42vh;
+        padding:1em 0em;
+        border-radius:5px;
+    }
+    input{
+        margin:auto;
+        width: 90%;
+        height:3em;
+        padding-left:1em;
+    }
+    .input{
+        margin:2em 1.5em;
+    }
+    .btn{
+        width: 82%;
+        height:3em;
+        margin:0% 8%;
+        background-color: var(--Green);
+        border:1px solid (var(--Green));
+        border-radius: 5px;
+
+        color:white;
+    }
+    .btn:focus{
+        transform: scale(0.9);
+    }
+    .terms{
+        color:var(--Grayish-Blue);
+        text-align: center;
+        font-size: small;
+        margin:1em 2em;
+    }
+    .service{
+        color:var(--Red);
+    }
+ }
+
+ .container{
+    margin:auto;
+    display: flex;
+    font-family:myFirstFont;
+    width:80vw;
+    height:80vh;
+    justify-self: center;
+
+}
+.intro-comp{
+    align-self: center;
+    padding:20px;
+    width:400px;
+    justify-content: center;
+}
+.head{
+    font-size: 40px;
+    font-weight: 700;
+    color:white;
+    width:300px;
+    margin:20px 1px;
+}
+.body{
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
+    margin:20px 1px;
+    width:400px;
+}
+.form{
+    width:40vw;
+    position: relative;
+    margin:50px 0px;
+    
+
+}
+.info{
+    height:40px;
+    width:450px;
+    background-color: var(--Blue);
+    color:white;
+    border-radius: 7px;
+    box-shadow:1px 5px 5px grey;
+    text-align: center;
+    padding-top:15px;
+    font-size: 16px;
+    margin:50px 40px;
+}
+.head1{
+    font-weight: 700;
+}
+.form-control{
+    width:450px;
+    height:400px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow:1px 5px 5px grey;
+    margin:25px;
+    padding-top:20px;
+}
+.input{
+margin:20px 25px;
+}
+input{
+    width:350px;
+    height:40px;
+    border:1px solid black;
+    padding:2px 20px;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid var(--Dark-Blue);
+    border-radius: 5px;
+}
+.btn{
+    width:390px;
+    margin:0px 30px;
+    height:40px;
+    background-color: var(--Green) ;
+    color:white;
+    text-align: center;
+    padding:12px 20px;
+    border:1px solid var(--Green);
+    border-radius:5px;
+    box-shadow: 1px 2px 2px black;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn:focus{
+    transform: scale(0.9);
+}
+.terms{
+   text-align: center; 
+    width:380px;
+    font-size: small;
+    margin:10px 30px;
+}
+.service{
+    color:var(--Red);
+}
+
+.input{
+margin:20px 25px;
+}
+ input{
+    width:350px;
+    height:40px;
+    border:1px solid black;
+    padding:2px 20px;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid var(--Dark-Blue);
+    border-radius: 5px;
+} 
+.btn{ 
+    width:390px;
+    margin:0px 30px;
+    height:40px;
+    background-color: var(--Green) ;
+    color:white;
+    text-align: center;
+    padding:12px 20px;
+    border:1px solid var(--Green);
+    border-radius:5px;
+    box-shadow: 1px 2px 2px black;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn:focus{
+    transform: scale(0.9);
+}
+.terms{
+   text-align: center; 
+    width:380px;
+    font-size: small;
+    margin:10px 30px;
+    color: var(--Grayish-Blue);
+}
+.service{
+    color:var(--Red);
+}
+small{
+    color:red;
+    text-align: end;
+    font-style: italic;
+    
+}
